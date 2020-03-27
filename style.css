@@ -12,7 +12,7 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .bg {
@@ -41,6 +41,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     flex-shrink: 4;
     flex-grow: 4;
     transform: scale(1.2);
@@ -83,7 +84,7 @@ section {
     flex-grow: 2;
     flex-shrink: 2;
     transform: scale(1.5);
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .home-content h1{
@@ -110,7 +111,7 @@ section {
     padding: 10px;
     border-style: solid;
     border-radius: 1rem;
-    transition: 0.2s;
+    transition: 0.3s;
     
 }
 .btn-projects {
@@ -176,6 +177,86 @@ section {
     font-size: 18px;
 }
 
+.contact-content {
+    z-index: 3;
+    height: 100vh;
+    width: 45vw;
+    padding-left: 25vw;
+    transform: scale(1.5);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-content h1{
+    color: #FFFFFF;
+    padding-bottom: 15px;
+}
+
+.contact {
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+#fname, #lname {
+    width: 10vw; 
+}
+
+input[type=text] {
+    border-radius: 0.2rem;
+    color: white;
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+input[type=submit] {
+    margin-top: 15px;
+    padding: 0.5em;
+    width: 5vw;
+    border-radius: 1rem;
+    border: 0;
+    background-color: white;
+}
+
+input[type=text]:focus {
+    border: none;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+label {
+    margin: 4px;
+}
+
+#subject {
+    background: white;
+    color: rgb(7, 8, 34);
+    border: none;
+    margin-top: 15px;
+}
+
+#subject:focus {
+    background: white;
+    color: rgb(7, 8, 34);
+    border: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(7, 8, 34);
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgb(7, 8, 34);
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgb(7, 8, 34);
+  }
+
 @keyframes change {
     0% {
         opacity: 65%;
@@ -189,8 +270,39 @@ section {
     header {
         transform: scale(1);
     }
-    .home-content, .about-content{
+
+    .home-content,
+    .about-content,
+    .contact-content{
         transform: scale(1);
-        padding-left: 9vh;
+        padding-left: 11vh;
+    }
+
+    .contact-content {
+        font-size: 14px;
+        padding-left: 25vw;
+        width: 80vw;
+    }
+
+    #name,
+    input[type=submit],
+    input[type=text] {
+        width: 20vw;
+        
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .home-content, .about-content .paragraph{
+        width: 70vw;
+    }
+
+    .btn-projects,
+    .btn-resume {
+        margin: 1vw;
+        display: flex;
+        flex-direction: column;
+        
+       
     }
 }
