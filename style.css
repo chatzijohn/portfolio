@@ -224,7 +224,6 @@ input[type=submit] {
 input[type=text]:focus {
     border: none;
     color: white;
-    border-bottom: 1px solid white;
 }
 
 label {
