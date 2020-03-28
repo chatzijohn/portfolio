@@ -297,7 +297,7 @@ label {
     #name,
     input[type=submit],
     input[type=text] {
-        width: 20vw;
+        width: 45vw;
         
     }
 }
@@ -312,7 +312,5 @@ label {
         margin: 1vw;
         display: flex;
         flex-direction: column;
-        
-       
     }
 }
