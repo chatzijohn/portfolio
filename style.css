@@ -200,8 +200,8 @@ section {
     flex-direction: column;
 }
 
-#fname, #lname {
-    width: 10vw; 
+#name {
+    width: 150px; 
 }
 
 input[type=text] {
@@ -295,16 +295,15 @@ label {
     }
 
     #name,
-    input[type=submit],
-    input[type=text] {
-        width: 45vw;
+    input[type=submit] {
+        width: 25vw;
         
     }
 }
 
 @media screen and (max-width: 380px) {
     .home-content, .about-content .paragraph{
-        width: 70vw;
+        width: 65vw;
     }
 
     .btn-projects,
@@ -312,5 +311,7 @@ label {
         margin: 1vw;
         display: flex;
         flex-direction: column;
+        
+       
     }
 }
